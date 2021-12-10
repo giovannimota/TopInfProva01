@@ -14,14 +14,14 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Calculator'),
+        title: const Text('Calculator'),
         backgroundColor: Colors.grey[850],
       ),
       body: Column(
         children: [
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 8, vertical: 30),
-            child: Opacity(
+            padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 30),
+            child: const Opacity(
               opacity: 0.5,
               child: Image(
                   image: NetworkImage(
@@ -43,7 +43,7 @@ class _HomeState extends State<Home> {
                       });
                     }
                   },
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     border: OutlineInputBorder(),
                     hintText: 'Número 01',
                   ),
